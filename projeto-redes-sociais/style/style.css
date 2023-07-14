@@ -6,39 +6,63 @@
     font-family: Arial, Helvetica, sans-serif;
 } 
 
-html, body{
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+html, body{ /*Configurações do body/html*/
     height: 100vh;
-    width: 100;
+    width: 100vw;
     background-size: cover;
 }
 
-body{
+body{ /*Configurações da imagen de fundo no body*/
     background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-main{
+main{ /*Configurações da tag main*/
     position: relative;
     height: 100vh;
 }
 
-section#tell{
+section#tell{ /*Configurações da sessão com o id=tell*/
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 627px;
-    width: 311px;
-    background: url(../imagens/frame-iphone.png) no-repeat;
-
+    height: 592px;
+    width: 592px;
+    background: url(../imagens/frame-celular.png) no-repeat;
+    background-size: cover;
+    /* background-color: blue; */
 }
 
-iframe#tela{
+iframe#tela{ /*Configurações do  iframe com o id=tela*/
     position: relative;
-    top: 80px;
-    left: 22px;
-    width: 269px;
-    height: 471px;
+    top: 20px;
+    left: 177px;
+    width: 209px;
+    height: 440px;
+    border-radius: 22px;  
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 8px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+} section#redes-sociais img:hover {
+    transform: translate(-3%, -3%);
+    border: 2px solid rgba(255, 255, 255, 0.63);
+    transition: .2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
